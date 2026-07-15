@@ -120,11 +120,6 @@ spec:
   syncPolicy:                      # Defines how ArgoCD syncs the app
     automated:                     # Enable auto-sync
       prune: true                  # Delete resources removed from Git
-      selfHeal: true               # Fix drift if resources are changed manually   # Target cluster API
-    namespace: default             # Namespace in which to deploy the app
-  syncPolicy:                      # Defines how ArgoCD syncs the app
-    automated:                     # Enable auto-sync
-      prune: true                  # Delete resources removed from Git
       selfHeal: true               # Fix drift if resources are changed manually
 ```
 
