@@ -103,20 +103,6 @@ In short:
 Create or apply **online_shop_app.yml**
 
 ```yaml
-
-apiVersion: argoproj.io/v1alpha1   # API group for ArgoCD resources
-kind: Application                  # Resource type is "Application"
-metadata:
-  name: online-shop-app            # Name of this ArgoCD application
-  namespace: argocd                # Must be created in the 'argocd' namespace
-spec:
-  project: default                 # ArgoCD Project (logical grouping of apps)
-  source:
-    repoURL: https://github.com/Rajankumar69/argocd-demos.git   # Git repo containing manifests
-    targetRevision: main           # Git branch or tag (e.g., main, dev, release-1.0)
-    path: declarative_approach/online_shop   # Path inside repo where manifests live
-  destination:
-    server: 
 apiVersion: argoproj.io/v1alpha1   # API group for ArgoCD resources
 kind: Application                  # Resource type is "Application"
 metadata:
